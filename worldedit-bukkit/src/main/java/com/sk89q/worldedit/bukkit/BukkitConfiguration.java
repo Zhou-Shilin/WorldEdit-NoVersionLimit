@@ -33,7 +33,7 @@ import java.nio.file.Path;
 public class BukkitConfiguration extends YAMLConfiguration {
 
     public boolean noOpPermissions = false;
-    public boolean unsupportedVersionEditing = false;
+    public boolean unsupportedVersionEditing = true;
     @Unreported private final WorldEditPlugin plugin;
 
     public BukkitConfiguration(YAMLProcessor config, WorldEditPlugin plugin) {
