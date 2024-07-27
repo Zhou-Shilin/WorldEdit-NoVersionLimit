@@ -39,12 +39,5 @@ jobs:
       if: always()
       with:
         name: reports for ${{ matrix.os }}
-        path: '**/build/libs/**
-
-    - uses: actions/upload-artifact@v4
-      name: Archive Logs
-      if: always()
-      with:
-        name: logs for ${{ matrix.os }}
-        path: '**/*.log'
+        path: '**/build/libs/**'
 
